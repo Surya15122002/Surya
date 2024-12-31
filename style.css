@@ -1,0 +1,124 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+}
+
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#skills ul,
+#education ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.project {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+#contact a {
+    color: #333;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #ffa500;
+}
+.skills-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-wrap: wrap; /* Ensures layout is responsive on smaller screens */
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill img {
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
+    margin-bottom: 0.5rem;
+}
+
+.skill p {
+    font-size: 1rem;
+    color: #333;
+}
+
+
+#downloadCV {
+    padding: 0.5rem 1rem;
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+    
+}
+
+#downloadCV:hover {
+    background-color: #ff8c00;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    #downloadCV {
+        margin-top: 1rem;
+    }
+}
